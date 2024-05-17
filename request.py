@@ -11,7 +11,7 @@ def send_payment_request(user_id, amount):
     return response.json()
 
 def confirm_payment(transaction_id):
-    api_url = f"https://api.example.com/payment/{transaction_id}/status"
+    api_url = f"https://api.razorpay.com/payment/{transaction_id}/status"
     response = requests.get(api_url)
     return response.json()
 
